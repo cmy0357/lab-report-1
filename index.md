@@ -3,7 +3,9 @@
 > ***Step 1: Installing VSCode***
 * Go to [VSCode Website](https://code.visualstudio.com), and install the corresponding version of it on your computer. Once installed, your should be able to see the following window:
 ![lab1 p2](https://user-images.githubusercontent.com/103284526/162543209-1327f18c-3aaa-4a4f-8c5b-afba968e666e.jpg)
----
+
+***
+
 > ***Step 2: Remotely connecting***
 * If you are on Windows, first follow this [link](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) to install OpenSSH.
 * Then, find your CSE 15L account using this [link](https://sdacs.ucsd.edu/~icc/index.php).
@@ -12,7 +14,9 @@
 * Press enter, and then type `yes`and press enter again.
 * After that, type in your password, and you will see something look like this in your terminal:
 ![lab1 p3](https://user-images.githubusercontent.com/103284526/162588310-1fb0e4cb-f7af-4578-a7b1-1aa315f17558.jpg)
+
 ---
+
 > ***Step 3: Try some commands***
 * After you log in to the remote server, you can try running some commands and see how they work. Here's a list of useful commmands you might want to try:
   - `cd`
@@ -23,7 +27,9 @@
   - `cat`
 * Here's an example of output you would get when running the commands:
 ![lab1 p4](https://user-images.githubusercontent.com/103284526/162588854-5c148fdb-394b-4b39-a7dd-d86b96e087bf.jpg)
+
 ---
+
 > ***Step 4: Moving files with `scp`***
 * First, create a file called `WhereAmI.java` and copy the following into the file:
 
@@ -40,7 +46,9 @@
 * Enter the password, and then log into the remote server again as we did in step 2.
 * Enter `ls`, and you will be able to run it with `javac` and `java`. Here's an example of output:
 ![lab1 p5](https://user-images.githubusercontent.com/103284526/162589674-1a86c0e2-f553-4bdf-abf6-915f1bfedd0a.jpg)
+
 ---
+
 > ***Step 5: Setting an SSH key***
 * On your computer, run the command `$ ssh-keygen`, and you will see the following output:
 ![lr1a](https://user-images.githubusercontent.com/103284526/162590148-99bd0648-4dc1-4553-9b48-a7602a72dcc2.jpg)
@@ -52,7 +60,9 @@
 * Once you logout, run the command `$ scp /Users/<user-name>/.ssh/id_rsa.pub cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys`. (Don't forget to change the `<user-name>` and `zz` with your own username)
 * After completing these steps, you will be able to run `ssh` or `scp` on your computer without entering the password. Here's an example of successfully logging in without password:
 ![lab1 p6](https://user-images.githubusercontent.com/103284526/162590640-14ede2f5-5ca9-40d7-88d6-f2307ee6c855.jpg)
+
 ---
+
 > ***Step 6: Optimizing Remote Running***
 * Edit `WhereAmI.java` on your computer and save it.
 * Copy the file to the remote server by running the command:  
