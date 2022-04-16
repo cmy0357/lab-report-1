@@ -65,7 +65,8 @@
 ---
 
 > ***Step 6: Optimizing Remote Running***
->> **Using the following steps will help you save some time when running remotely because you can run multiple commands at once.**
+>> **Using the following steps will help you save some time when running remotely because you can run multiple commands at once.** 
+
 * Edit `WhereAmI.java` on your computer and save it.
 * Copy the file to the remote server by running the command:  
   `scp WhereAmI.java cs15lsp22zz@ieng6.ucsd.edu:~/`
